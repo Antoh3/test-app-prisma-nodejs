@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/output.css')
+  body
+    nav.flex.items-center.justify-between.bg-teal-500.p-6
+      span.font-semibold.text-xl.text-white.tracking-tight The Workout Tracker
+      .flex.items-center
+        a.inline-block.text-sm.px-4.py-2.leading-none.border.rounded.text-white.border-white.mt-4(href='/dashboard' class='hover:border-transparent hover:text-teal-500 hover:bg-white') Dashboard
+
+    .flex.flex-col.items-center.mt-16
+      h1.text-4xl.font-bold.text-gray-800.mb-2 The Workout Tracker
+      p.text-lg.text-gray-600.mb-4 A small demo built with Express on NodeJS. Secured with Okta.
+      p.text-lg.text-gray-600.mb-4 
+        | This app uses 
+        a.text-teal-500(href='https://tailwindcss.com') TailwindCSS 
+        | for its CSS framework and 
+        a.text-teal-500(href='https://www.prisma.io') PrismaJS 
+        | for its ORM.
+    
+    block content
